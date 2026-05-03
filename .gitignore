@@ -1,0 +1,14 @@
+# Credenciais - nunca commitar
+LocacaoDeCarros/appsettings.json
+
+# Build
+bin/
+obj/
+
+# .NET
+*.user
+*.suo
+.vs/
+
+# Logs
+*.log
