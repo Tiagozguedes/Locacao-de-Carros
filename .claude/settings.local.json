@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -X POST http://localhost:5202/api/carros -H \"Content-Type: application/json\" -d \"{\\\\\"modelo\\\\\":\\\\\"Corolla\\\\\",\\\\\"marca\\\\\":\\\\\"Toyota\\\\\",\\\\\"ano\\\\\":2022,\\\\\"valorDiaria\\\\\":180.00}\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s -X PUT http://localhost:5202/api/carros/1 -H \"Content-Type: application/json\" -d \"{\\\\\"modelo\\\\\":\\\\\"Civic Turbo\\\\\",\\\\\"marca\\\\\":\\\\\"Honda\\\\\",\\\\\"ano\\\\\":2021,\\\\\"valorDiaria\\\\\":170.00}\")",
+      "Bash(curl -s -X DELETE http://localhost:5202/api/carros/2 -w \"\\\\nHTTP Status: %{http_code}\")",
+      "Bash(curl -s http://localhost:5202/api/carros/999 -w \"\\\\nHTTP Status: %{http_code}\")",
+      "Bash(curl -s -X POST http://localhost:5202/api/carros -H \"Content-Type: application/json\" -d \"{\\\\\"modelo\\\\\":\\\\\"Civic\\\\\",\\\\\"marca\\\\\":\\\\\"Honda\\\\\",\\\\\"ano\\\\\":2020,\\\\\"valorDiaria\\\\\":150.00}\")",
+      "Bash(curl -s -X POST http://localhost:5202/api/locacoes/calcular -H \"Content-Type: application/json\" -d \"{\\\\\"carroId\\\\\":3,\\\\\"dataInicio\\\\\":\\\\\"2025-04-25\\\\\",\\\\\"dataFim\\\\\":\\\\\"2025-04-30\\\\\"}\")",
+      "Bash(curl -s -X POST http://localhost:5202/api/locacoes/calcular -H \"Content-Type: application/json\" -d \"{\\\\\"carroId\\\\\":3,\\\\\"dataInicio\\\\\":\\\\\"2025-04-25\\\\\",\\\\\"dataFim\\\\\":\\\\\"2025-05-02\\\\\"}\")"
+    ]
+  }
+}
